@@ -131,6 +131,7 @@ $tiny-stuff-font-size: 10px;
 $h1-font-size: 39px;
 $h2-font-size: 32px;
 $h3-font-size: 25px;
+$h4-font-size: 18px;
 
 $round-to-nearest-half-line: true;
 @include establish-baseline;
@@ -160,6 +161,12 @@ body {
 
     h3 {
         @include adjust-font-size-to($h3-font-size);
+    }
+
+    h4 {
+      @include adjust-font-size-to($h4-font-size);
+      text-transform: uppercase;
+      font-weight: 400;
     }
 
     p {
@@ -324,6 +331,10 @@ body.article {
         p.first {
           @include rhythm($leader: 0, $trailer: 0);
         }
+    }
+
+    ul {
+      margin-left: 1em;
     }
 }
 
