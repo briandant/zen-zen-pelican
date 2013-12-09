@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  {% block head %}
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <link rel="icon" type="image/gif" href="{% block favicon %}theme/images/favicon.ico{% endblock %}">
+
+      <meta charset="utf-8" />
+      {% if FEED_ALL_ATOM %}
+      <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+      {% endif %}
+      {% if FEED_ALL_RSS %}
+      <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+      {% endif %}
+      {% if FEED_ATOM %}
+      <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+      {% endif %}
+      {% if FEED_RSS %}
+      <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+      {% endif %}
+      {% if CATEGORY_FEED_ATOM and category %}
+      <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+      {% endif %}
+      {% if CATEGORY_FEED_RSS and category %}
+      <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+      {% endif %}
+      {% if TAG_FEED_ATOM and tag %}
+      <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+      {% endif %}
+      {% if TAG_FEED_RSS and tag %}
+      <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+      {% endif %}
+  {% endblock head %}
+
+  {% block meta %}
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  {% endblock %}
+
+  {% block extra_meta %} {% endblock %}
+
+  {% block stylesheets %}
+    {# Stylesheets #}
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Open+Sans+Condensed:300,700,300italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+    <link href="theme/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="theme/css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  {% endblock stylesheets %}
+  {% block extra_stylesheets %}{% endblock %}
+
+</head>
+
+<body class="{% block body_class %}{% endblock %}">
+  {% block nav %}
+    {% include 'includes/nav.html' %}
+  {% endblock nav %}
+
+  {% block content %} {% endblock content %}
+
+  {% block footer %}
+    {% include 'includes/footer.html' %}
+  {% endblock footer %}
+</body>
+</html>

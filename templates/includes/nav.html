@@ -1,0 +1,16 @@
+<nav id="menu">
+  <div class=wrapper-nav-inner>
+    {% block nav_title %}
+      <header id="banner" class="body">
+        <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+      </header><!-- /#banner -->
+    {% endblock %}
+    {% if MENUITEMS %}
+      <ul>
+        {% for title, link in MENUITEMS %}
+          <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</nav><!-- /#menu -->

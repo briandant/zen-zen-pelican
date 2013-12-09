@@ -1,0 +1,741 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300|Merriweather:400,400italic,700|Inconsolata:400,700);
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* light is default mode, so pair with general html definition */
+/* line 112, ../sass/screen.scss */
+html, .light {
+  background-color: #fdf6e3;
+  color: #657b83;
+}
+/* line 101, ../sass/screen.scss */
+html *, .light * {
+  color: #657b83;
+}
+/* line 102, ../sass/screen.scss */
+html h1, html h2, html h3, html h4, html h5, html h6, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+  color: #586e75;
+  border-color: #657b83;
+}
+/* line 103, ../sass/screen.scss */
+html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
+  color: #586e75;
+}
+
+/* line 116, ../sass/screen.scss */
+.dark {
+  background-color: #002b36;
+  color: #839496;
+}
+/* line 101, ../sass/screen.scss */
+.dark * {
+  color: #839496;
+}
+/* line 102, ../sass/screen.scss */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #93a1a1;
+  border-color: #839496;
+}
+/* line 103, ../sass/screen.scss */
+.dark a, .dark a:active, .dark a:visited {
+  color: #93a1a1;
+}
+
+/* line 120, ../sass/screen.scss */
+html * {
+  color-profile: sRGB;
+}
+
+/* line 61, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 112.5%;
+}
+
+/* line 64, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+/* line 140, ../sass/screen.scss */
+body {
+  font-family: 'Merriweather', serif;
+}
+/* line 143, ../sass/screen.scss */
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  text-shadow: 0 0.5px 0.5px #c5c5c5;
+  margin-top: 1.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.375em;
+}
+/* line 53, ../sass/screen.scss */
+body h1 a:link, body h2 a:link, body h3 a:link, body h4 a:link, body h5 a:link, body h6 a:link {
+  text-decoration: none;
+}
+/* line 54, ../sass/screen.scss */
+body h1 a:visited, body h2 a:visited, body h3 a:visited, body h4 a:visited, body h5 a:visited, body h6 a:visited {
+  text-decoration: none;
+}
+/* line 55, ../sass/screen.scss */
+body h1 a:hover, body h2 a:hover, body h3 a:hover, body h4 a:hover, body h5 a:hover, body h6 a:hover {
+  text-decoration: underline;
+}
+/* line 56, ../sass/screen.scss */
+body h1 a:active, body h2 a:active, body h3 a:active, body h4 a:active, body h5 a:active, body h6 a:active {
+  text-decoration: underline;
+}
+/* line 152, ../sass/screen.scss */
+body h1 {
+  font-size: 2.16667em;
+  line-height: 1.38462em;
+  margin-top: 1.5em;
+}
+/* line 157, ../sass/screen.scss */
+body h2 {
+  font-size: 1.77778em;
+  line-height: 1.26563em;
+}
+/* line 161, ../sass/screen.scss */
+body h3 {
+  font-size: 1.38889em;
+  line-height: 1.62em;
+}
+/* line 165, ../sass/screen.scss */
+body p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 170, ../sass/screen.scss */
+body ul, body ol {
+  margin-bottom: 1.5em;
+}
+/* line 175, ../sass/screen.scss */
+body a:link {
+  text-decoration: underline;
+}
+/* line 176, ../sass/screen.scss */
+body a:visited {
+  text-decoration: underline;
+}
+/* line 177, ../sass/screen.scss */
+body a:hover {
+  text-decoration: underline;
+}
+/* line 181, ../sass/screen.scss */
+body a:active {
+  text-decoration: underline;
+}
+
+/* line 193, ../sass/screen.scss */
+ol {
+  list-style-type: upper-roman;
+}
+
+/* line 197, ../sass/screen.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 201, ../sass/screen.scss */
+em {
+  font-style: italic;
+}
+
+/* line 205, ../sass/screen.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 209, ../sass/screen.scss */
+cite, .code, tt.docutils.literal {
+  font-family: 'Inconsolata', sans-serif;
+}
+
+/* line 213, ../sass/screen.scss */
+.code, tt.docutils.literal, pre.literal-block {
+  background-color: #eee8d5;
+  border-radius: 1px;
+}
+
+/* line 217, ../sass/screen.scss */
+tt.docutils.literal {
+  padding: 2px 4px;
+}
+
+/* line 221, ../sass/screen.scss */
+.code, pre.literal-block, .contents.topic, em.summary p {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-left-style: none;
+  border-left-width: 0.05556em;
+  padding-left: 1.44444em;
+  border-right-style: none;
+  border-right-width: 0.05556em;
+  padding-right: 1.44444em;
+  margin-bottom: 1.5em;
+}
+
+/* line 231, ../sass/screen.scss */
+blockquote {
+  background-color: #eee8d5;
+  font-style: italic;
+}
+
+/* line 238, ../sass/screen.scss */
+section.content,
+.wrapper-nav-inner,
+.wrapper-footer-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 243, ../sass/screen.scss */
+footer address {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  text-shadow: 0 0.5px 0.5px #c5c5c5;
+  font-size: 10px;
+}
+
+/* line 248, ../sass/screen.scss */
+div.inner-box {
+  padding: 24px;
+  box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.17);
+}
+
+/* line 252, ../sass/screen.scss */
+.entry-title {
+  display: inline-block;
+  max-width: 89%;
+}
+@media (max-width: 600px) {
+  /* line 252, ../sass/screen.scss */
+  .entry-title {
+    max-width: 80%;
+  }
+}
+
+/* line 261, ../sass/screen.scss */
+abbr.published {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 300;
+  text-shadow: 0 0.5px 0.5px #c5c5c5;
+  font-size: 0.55556em;
+  line-height: 2.7em;
+  margin-left: 5px;
+}
+
+/* line 268, ../sass/screen.scss */
+a.footnote-reference {
+  vertical-align: top;
+  font-size: 10px;
+}
+/* line 53, ../sass/screen.scss */
+a.footnote-reference:link {
+  text-decoration: none;
+}
+/* line 54, ../sass/screen.scss */
+a.footnote-reference:visited {
+  text-decoration: none;
+}
+/* line 55, ../sass/screen.scss */
+a.footnote-reference:hover {
+  text-decoration: underline;
+}
+/* line 56, ../sass/screen.scss */
+a.footnote-reference:active {
+  text-decoration: underline;
+}
+/* line 53, ../sass/screen.scss */
+a.fn-backref:link {
+  text-decoration: none;
+}
+/* line 54, ../sass/screen.scss */
+a.fn-backref:visited {
+  text-decoration: none;
+}
+/* line 55, ../sass/screen.scss */
+a.fn-backref:hover {
+  text-decoration: underline;
+}
+/* line 56, ../sass/screen.scss */
+a.fn-backref:active {
+  text-decoration: underline;
+}
+
+/* line 279, ../sass/screen.scss */
+.contents.topic {
+  background-color: #eee8d5;
+  border-radius: 1px;
+}
+/* line 282, ../sass/screen.scss */
+.contents.topic .topic-title {
+  font-size: 1.38889em;
+  line-height: 1.62em;
+}
+/* line 286, ../sass/screen.scss */
+.contents.topic ul {
+  list-style-type: none;
+  margin-left: 3%;
+}
+
+/* line 300, ../sass/screen.scss */
+body.article header {
+  display: inline-block;
+  width: 100%;
+}
+/* line 307, ../sass/screen.scss */
+body.article em.summary p {
+  background-color: #eee8d5;
+  border-radius: 1px;
+}
+/* line 310, ../sass/screen.scss */
+body.article em.summary p .first.last {
+  font-style: italic;
+  font-color: #839496;
+}
+/* line 317, ../sass/screen.scss */
+body.article .section p {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+/* line 321, ../sass/screen.scss */
+body.article dd ul {
+  margin-left: 3%;
+}
+/* line 324, ../sass/screen.scss */
+body.article dd ul p.first {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+/* line 334, ../sass/screen.scss */
+body.index h2 {
+  margin-top: 1.5em;
+}
+/* line 338, ../sass/screen.scss */
+body.index ul {
+  list-style-type: none;
+}
+/* line 343, ../sass/screen.scss */
+body.index article.hentry {
+  border-bottom-style: solid;
+  border-bottom-width: 0.05556em;
+  padding-bottom: 1.44444em;
+}
+
+/* line 46, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+section.content:before, section.content:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+section.content:after {
+  clear: both;
+}
+/* line 355, ../sass/screen.scss */
+section.content .right-column {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 600px) {
+  /* line 355, ../sass/screen.scss */
+  section.content .right-column {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+    margin-top: 2%;
+  }
+}
+/* line 365, ../sass/screen.scss */
+section.content .left-column {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 600px) {
+  /* line 365, ../sass/screen.scss */
+  section.content .left-column {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+
+/* line 377, ../sass/screen.scss */
+.code.python {
+  color: #657b83;
+}
+/* line 380, ../sass/screen.scss */
+.code.python .emphasized, .code.python .gs, .code.python .kc, .code.python .kd, .code.python .kp, .code.python .kr {
+  color: #586e75;
+  font-weight: bold;
+}
+/* line 383, ../sass/screen.scss */
+.code.python .ln {
+  color: #93a1a1;
+}
+/* line 385, ../sass/screen.scss */
+.code.python .bp {
+  color: #93a1a1;
+}
+/* line 386, ../sass/screen.scss */
+.code.python .c {
+  color: #93a1a1;
+  font-style: italic;
+}
+/* line 387, ../sass/screen.scss */
+.code.python .c1 {
+  color: #93a1a1;
+  font-style: italic;
+}
+/* line 388, ../sass/screen.scss */
+.code.python .cm {
+  color: #93a1a1;
+  font-style: italic;
+}
+/* line 389, ../sass/screen.scss */
+.code.python .cp {
+  color: #dc322f;
+  font-weight: bold;
+}
+/* line 390, ../sass/screen.scss */
+.code.python .cs {
+  color: #93a1a1;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 391, ../sass/screen.scss */
+.code.python .err {
+  color: #657b83;
+  background-color: #dc322f;
+}
+/* line 392, ../sass/screen.scss */
+.code.python .gd .x {
+  color: #657b83;
+  background-color: #d33682;
+}
+/* line 393, ../sass/screen.scss */
+.code.python .gd {
+  color: #657b83;
+  background-color: #d33682;
+}
+/* line 394, ../sass/screen.scss */
+.code.python .ge {
+  font-style: italic;
+}
+/* line 395, ../sass/screen.scss */
+.code.python .gh {
+  color: #93a1a1;
+}
+/* line 396, ../sass/screen.scss */
+.code.python .gi .x {
+  color: #657b83;
+  background-color: #eee8d5;
+}
+/* line 397, ../sass/screen.scss */
+.code.python .gi {
+  color: #859900;
+  background-color: #eee8d5;
+}
+/* line 398, ../sass/screen.scss */
+.code.python .go {
+  color: #657b83;
+}
+/* line 399, ../sass/screen.scss */
+.code.python .gp {
+  color: #586e75;
+}
+/* line 400, ../sass/screen.scss */
+.code.python .gr {
+  color: #657b83;
+  background-color: #dc322f;
+}
+/* line 402, ../sass/screen.scss */
+.code.python .gt {
+  color: #dc322f;
+  background-color: #eee8d5;
+}
+/* line 403, ../sass/screen.scss */
+.code.python .gu {
+  color: #586e75;
+}
+/* line 404, ../sass/screen.scss */
+.code.python .il {
+  color: #d33682;
+}
+/* line 405, ../sass/screen.scss */
+.code.python .k {
+  color: #268bd2;
+  font-weight: bold;
+}
+/* line 410, ../sass/screen.scss */
+.code.python .kt {
+  color: #268bd2;
+  font-weight: bold;
+}
+/* line 411, ../sass/screen.scss */
+.code.python .m {
+  color: #d33682;
+}
+/* line 412, ../sass/screen.scss */
+.code.python .mf {
+  color: #d33682;
+}
+/* line 413, ../sass/screen.scss */
+.code.python .mh {
+  color: #d33682;
+}
+/* line 414, ../sass/screen.scss */
+.code.python .mi {
+  color: #d33682;
+}
+/* line 415, ../sass/screen.scss */
+.code.python .mo {
+  color: #d33682;
+}
+/* line 416, ../sass/screen.scss */
+.code.python .n {
+  color: #586e75;
+}
+/* line 417, ../sass/screen.scss */
+.code.python .na {
+  color: #93a1a1;
+}
+/* line 418, ../sass/screen.scss */
+.code.python .nb {
+  color: #2aa198;
+}
+/* line 419, ../sass/screen.scss */
+.code.python .nc {
+  color: #268bd2;
+  font-weight: bold;
+}
+/* line 420, ../sass/screen.scss */
+.code.python .ne {
+  color: #268bd2;
+  font-weight: bold;
+}
+/* line 421, ../sass/screen.scss */
+.code.python .nf {
+  color: #268bd2;
+  font-weight: bold;
+}
+/* line 422, ../sass/screen.scss */
+.code.python .ni {
+  color: #839496;
+}
+/* line 423, ../sass/screen.scss */
+.code.python .nl {
+  color: #859900;
+}
+/* line 424, ../sass/screen.scss */
+.code.python .nn {
+  color: #cb4b16;
+}
+/* line 425, ../sass/screen.scss */
+.code.python .no {
+  color: #b58900;
+}
+/* line 426, ../sass/screen.scss */
+.code.python .nt {
+  color: #268bd2;
+  font-weight: bold;
+}
+/* line 427, ../sass/screen.scss */
+.code.python .nv {
+  color: #b58900;
+}
+/* line 428, ../sass/screen.scss */
+.code.python .p {
+  color: #586e75;
+}
+/* line 429, ../sass/screen.scss */
+.code.python .o {
+  color: #6c71c4;
+}
+/* line 430, ../sass/screen.scss */
+.code.python .ow {
+  font-weight: bold;
+}
+/* line 431, ../sass/screen.scss */
+.code.python .s {
+  color: #2aa198;
+}
+/* line 432, ../sass/screen.scss */
+.code.python .s1 {
+  color: #2aa198;
+}
+/* line 433, ../sass/screen.scss */
+.code.python .s2 {
+  color: #2aa198;
+}
+/* line 434, ../sass/screen.scss */
+.code.python .sb {
+  color: #2aa198;
+}
+/* line 435, ../sass/screen.scss */
+.code.python .sc {
+  color: #2aa198;
+}
+/* line 436, ../sass/screen.scss */
+.code.python .sd {
+  color: #2aa198;
+}
+/* line 437, ../sass/screen.scss */
+.code.python .se {
+  color: #2aa198;
+}
+/* line 438, ../sass/screen.scss */
+.code.python .sh {
+  color: #2aa198;
+}
+/* line 439, ../sass/screen.scss */
+.code.python .si {
+  color: #2aa198;
+}
+/* line 440, ../sass/screen.scss */
+.code.python .sr {
+  color: #859900;
+}
+/* line 441, ../sass/screen.scss */
+.code.python .ss {
+  color: #d33682;
+}
+/* line 442, ../sass/screen.scss */
+.code.python .sx {
+  color: #dc322f;
+}
+/* line 443, ../sass/screen.scss */
+.code.python .vc {
+  color: #b58900;
+}
+/* line 444, ../sass/screen.scss */
+.code.python .vg {
+  color: #b58900;
+}
+/* line 445, ../sass/screen.scss */
+.code.python .vi {
+  color: #b58900;
+}
+/* line 446, ../sass/screen.scss */
+.code.python .w {
+  color: #eee8d5;
+}

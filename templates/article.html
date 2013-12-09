@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body_class %}article{% endblock %}
+{% block nav_title %}{% endblock %}
+{% block nav%}{% endblock %} {# Don't show title #}
+{% block content %}
+<section class="content">
+  <header>
+    <h1 class="entry-title">
+      <a href="{{ article.url }}" rel="bookmark"
+        title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+    </h1>
+      <abbr class="published" title="{{ article.date.isoformat() }}">
+        {{ article.locale_date }}
+      </abbr>
+{#   {% import 'translations.html' as translations with context %}#}
+{#   {{ translations.translations_for(article) }}#}
+  </header>
+  <div class="entry-content">
+    <em class="summary">{{ article.summary }}</em>
+    {{ article.content }}
+  </div><!-- /.entry-content -->
+</section>
+{% endblock %}
