@@ -321,8 +321,12 @@ body.article {
         }
     }
 
+    .section ul p.first {
+        @include rhythm($leader: 0, $trailer: 0);
+    }
+
     .section p {
-          @include rhythm($leader: 0, $trailer: 1);
+        @include rhythm($leader: 0, $trailer: 1);
     }
 
     dd ul {
