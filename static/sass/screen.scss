@@ -337,9 +337,14 @@ body.article {
         }
     }
 
+    img {
+      @include rhythm($leader: 0, $trailer: 1);
+      }
+
     ul {
       margin-left: 1em;
     }
+
 }
 
 // Index page
