@@ -345,6 +345,11 @@ body.article {
       margin-left: 1em;
     }
 
+    table.footnote td.label {
+        vertical-align: baseline;
+        padding-right: 4px;
+    }
+
 }
 
 // Index page
