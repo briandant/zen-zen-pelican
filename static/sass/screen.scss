@@ -343,6 +343,9 @@ body.article {
 
     ul {
       margin-left: 1em;
+      .first.last.simple {
+          @include rhythm($leader: 0, $trailer: 0);
+      }
     }
 
     table.footnote td.label {
