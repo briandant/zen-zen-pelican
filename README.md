@@ -1,4 +1,5 @@
-devlog_theme
-============
+zen-zen-pelican
+===============
 
-Theme for the devlog.
+This is a Pelican theme using Solarized, Sass, and Compass.  
+
